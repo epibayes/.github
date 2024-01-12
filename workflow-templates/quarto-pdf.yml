@@ -26,18 +26,19 @@ jobs:
     
       
       # add software dependencies here and any libraries
-      - run: sudo apt-get install texlive-xetex
+      # Uncomment below for Python install
       # From https://github.com/actions/setup-python
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11' 
-          cache: 'pip'
+      # - name: Setup Python
+      #  uses: actions/setup-python@v4
+      #  with:
+      #    python-version: '3.11' 
+      #    cache: 'pip'
 
-     # - run: sudo apt-get install python3-distutils
-      - run: pip install jupyter
-      - run: pip install -r requirements.txt
-      - run: quarto render segregation-infection-dynamics.qmd --to pdf
+     
+     # - run: pip install jupyter
+     # - run: pip install -r requirements.txt
+      - run: sudo apt-get install texlive-xetex 
+      - run: quarto render YOUR FILENAME.qmd --to pdf
 
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v3
