@@ -1,0 +1,8 @@
+{
+    "name": "Quarto PDF Manuscript Workflow",
+    "description": "Quarto PDF Manuscript Starter Worflow.",
+    "iconName": "example-icon",
+    "filePatterns": [
+        ".*\\.qmd$"
+    ]
+}
