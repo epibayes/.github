@@ -44,5 +44,5 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: manuscript
-          path: _manuscript/segregation-infection-dynamics.pdf
+          path: YOUR FILE.pdf
      
